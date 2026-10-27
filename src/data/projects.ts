@@ -52,7 +52,7 @@ export const projects: Project[] = [
       "Act three is the strike. Every element was designed to be reused by the farm: the canopy became shade for the nursery, the table its packing bench.",
     ],
     gallery: [
-      img("photo-1464366400600-7168b8af9bc3"),
+      "/projects/harvest-supper/hall.jpg",
       img("photo-1519167758481-83f550bb49b3"),
       img("photo-1505373877841-8d25f7d46678"),
     ],
