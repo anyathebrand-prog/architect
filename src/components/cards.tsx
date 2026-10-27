@@ -22,7 +22,7 @@ export function FeatureCard({ project, className = "", sizes = "33vw", chips = f
         <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-paper text-ink">↗</span>
       )}
       <div className="absolute inset-x-4 bottom-4">
-        <h3 className="text-2xl font-medium uppercase leading-[0.95] tracking-tight md:text-3xl">{project.title}</h3>
+        <h3 className="text-2xl font-display uppercase leading-[0.95] md:text-3xl">{project.title}</h3>
         <p className="mt-2 max-w-xs text-xs leading-snug text-paper/75">{project.summary}</p>
         <Link
           href={`/projects/${project.slug}`}
@@ -63,7 +63,7 @@ export function ServiceCard({
       <span className="relative h-9 w-9 overflow-hidden rounded-full">
         <Image src={image} alt="" fill sizes="36px" className="object-cover" />
       </span>
-      <h3 className="mt-2 font-medium leading-tight">{title}</h3>
+      <h3 className="font-display mt-2 text-xl leading-tight">{title}</h3>
       <p className="text-xs leading-snug text-muted">{text}</p>
       <Link href={href} className="pill meta mt-2 bg-paper px-4 py-2 ring-1 ring-ink/15 transition-colors hover:bg-ink hover:text-paper">
         Read more

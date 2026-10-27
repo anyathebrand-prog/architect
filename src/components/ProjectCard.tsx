@@ -70,8 +70,8 @@ export default function ProjectCard({
           <Arrow />
         </span>
         <div className="absolute bottom-3 left-3 right-3 flex flex-col items-start">
-          <span className="rounded-t-xl bg-paper px-3 pt-2 text-xl italic leading-none tracking-tight md:text-2xl">{first}</span>
-          <span className="rounded-b-xl rounded-tr-xl bg-paper px-3 pb-2 pt-1 text-xl font-medium leading-none tracking-tight md:text-2xl">
+          <span className="font-display rounded-t-xl bg-paper px-3 pt-2 text-xl italic leading-none tracking-tight md:text-2xl">{first}</span>
+          <span className="font-display rounded-b-xl rounded-tr-xl bg-paper px-3 pb-2 pt-1 text-xl leading-none tracking-tight md:text-2xl">
             {rest.join(" ") || " "}
           </span>
         </div>

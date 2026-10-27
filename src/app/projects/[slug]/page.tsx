@@ -62,8 +62,8 @@ export default async function ProjectPage({ params }: Props) {
           <Chip>{p.status}</Chip>
         </div>
         <h1 className="absolute bottom-4 left-4 flex flex-col items-start md:bottom-6 md:left-6">
-          <span className="rounded-t-2xl bg-paper px-4 pt-3 text-4xl italic leading-none tracking-tight md:text-7xl">{first}</span>
-          <span className="rounded-b-2xl rounded-tr-2xl bg-paper px-4 pb-3 pt-1 text-4xl font-medium leading-none tracking-tight md:text-7xl">{rest.join(" ")}</span>
+          <span className="font-display rounded-t-2xl bg-paper px-4 pt-3 text-4xl italic leading-none tracking-tight md:text-7xl">{first}</span>
+          <span className="font-display rounded-b-2xl rounded-tr-2xl bg-paper px-4 pb-3 pt-1 text-4xl leading-none tracking-tight md:text-7xl">{rest.join(" ")}</span>
         </h1>
       </header>
 

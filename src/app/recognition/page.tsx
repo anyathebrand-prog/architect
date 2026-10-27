@@ -25,7 +25,7 @@ export default function RecognitionPage() {
               <li key={r.title} data-fade className={`flex min-h-48 flex-col justify-between gap-6 rounded-[2rem] p-6 ${r.kind === "Award" ? "bg-paper" : "bg-paper ring-1 ring-ink/10"}`}>
                 <Chip dark={r.kind === "Award"} className="self-start">{r.kind}</Chip>
                 <div>
-                  <h2 className="text-2xl font-medium leading-tight tracking-tight">{r.title}</h2>
+                  <h2 className="text-2xl font-display leading-tight">{r.title}</h2>
                   <p className="mt-2 text-muted">{r.org}</p>
                 </div>
               </li>

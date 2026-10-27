@@ -13,6 +13,7 @@
   --color-muted: #8a8077;
   --color-rule: rgb(20 18 16 / 0.1);
   --font-sans: var(--font-inter-tight), system-ui, sans-serif;
+  --font-display: var(--font-tan-pearl), "Didot", "Bodoni 72", serif;
   --ease-stone: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -32,19 +33,25 @@ body {
 
 ::selection { background: var(--color-clay); color: var(--color-paper); }
 
-/* Big grotesk headlines with italic accents */
-.display {
-  font-weight: 500;
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+/* Headlines in the logo's high-contrast serif, italic accents */
+.display, .font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
-.display em { font-style: italic; font-weight: 400; }
+/* Headlines take the logo's wine colour; on dark surfaces they follow the text colour */
+.display { line-height: 1; }
+@layer components {
+  .display { color: var(--heading, var(--color-wine)); }
+}
+.text-paper, .bg-ink, .bg-earth { --heading: currentColor; }
+.display em { font-style: italic; }
 
 /* Small uppercase UI labels */
 .meta {
   font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.16em; /* wide tracking, like "STUDIO" in the logo */
   text-transform: uppercase;
 }
 

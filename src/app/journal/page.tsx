@@ -41,7 +41,7 @@ export default function JournalPage() {
                 <span className="pill meta absolute left-3 top-3 bg-paper/90 px-3 py-1.5 text-[0.6rem]">{p.category}</span>
               </div>
               <div className="flex flex-1 flex-col justify-between gap-6 p-4">
-                <h2 className="text-2xl font-medium leading-tight tracking-tight">{p.title}</h2>
+                <h2 className="text-2xl font-display leading-tight">{p.title}</h2>
                 <div className="flex items-center justify-between">
                   <span className="meta text-muted">{fmt(p.date)} · {p.readTime}</span>
                   <ArrowCircle />

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter_Tight } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import MotionProvider from "@/components/MotionProvider";
 import Header from "@/components/Header";
@@ -13,6 +14,12 @@ const sans = Inter_Tight({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-inter-tight",
+  display: "swap",
+});
+// The ONWA logo typeface (regular only; <em> accents use a synthesised slant)
+const serif = localFont({
+  src: "./fonts/tan-pearl.otf",
+  variable: "--font-tan-pearl",
   display: "swap",
 });
 
@@ -39,7 +46,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-NG" className={`${sans.variable}`}>
+    <html lang="en-NG" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <a href="#main" className="meta sr-only z-[200] bg-ink p-3 text-paper focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
           Skip to content

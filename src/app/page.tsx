@@ -132,7 +132,7 @@ export default function Home() {
                   <span className="pill meta absolute left-3 top-3 bg-paper/90 px-3 py-1.5 text-[0.6rem]">{p.category}</span>
                 </div>
                 <div className="flex items-end justify-between gap-4 p-3 pt-4">
-                  <h3 className="text-xl font-medium leading-tight tracking-tight">{p.title}</h3>
+                  <h3 className="text-xl font-display leading-tight">{p.title}</h3>
                   <span className="meta shrink-0 text-muted">{p.readTime}</span>
                 </div>
               </Link>
