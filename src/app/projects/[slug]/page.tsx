@@ -114,7 +114,7 @@ export default async function ProjectPage({ params }: Props) {
           <ul className="mt-6 space-y-2">
             {p.materials.map((m) => (
               <li key={m.name} className="flex items-center gap-4 rounded-2xl bg-panel p-2">
-                <span className="h-14 w-14 shrink-0 rounded-xl" style={{ backgroundColor: m.swatch }} aria-hidden />
+                <span className="h-14 w-14 shrink-0 rounded-xl ring-1 ring-ink/10" style={{ backgroundColor: m.swatch }} aria-hidden />
                 <span>
                   <span className="block font-medium">{m.name}</span>
                   <span className="text-sm text-muted">{m.note}</span>
