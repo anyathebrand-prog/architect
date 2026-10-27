@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #e9e4dc;
+  --color-paper: #faf8f5;
+  --color-panel: #f1ede7;
+  --color-sand: #e8dfd3;
+  --color-clay: #b5654a;
+  --color-travertine: #d6c7b0;
+  --color-earth: #3b2a22;
+  --color-ink: #141210;
+  --color-muted: #8a8077;
+  --color-rule: rgb(20 18 16 / 0.1);
+  --font-sans: var(--font-inter-tight), system-ui, sans-serif;
+  --ease-stone: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-canvas);
+  overflow-x: hidden;
+}
+
+::selection { background: var(--color-clay); color: var(--color-paper); }
+
+/* Big grotesk headlines with italic accents */
+.display {
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+.display em { font-style: italic; font-weight: 400; }
+
+/* Small uppercase UI labels */
+.meta {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Rounded panel the page sections sit on */
+.panel { background: var(--color-paper); border-radius: 2rem; }
+@media (min-width: 768px) { .panel { border-radius: 2.5rem; } }
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.rule-t { border-top: 1px solid var(--color-rule); }
+.rule-b { border-bottom: 1px solid var(--color-rule); }
+.on-dark { --color-rule: rgb(250 248 245 / 0.18); }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.line-mask { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.line-inner { display: block; will-change: transform; }
+
+:focus-visible { outline: 2px solid var(--color-clay); outline-offset: 3px; }
+
+@media (pointer: fine) {
+  html.has-cursor, html.has-cursor a, html.has-cursor button { cursor: none; }
+}
+
+::view-transition-group(project-hero) {
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
