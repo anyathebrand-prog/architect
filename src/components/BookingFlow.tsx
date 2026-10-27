@@ -272,8 +272,8 @@ export default function BookingFlow() {
                     Thank you. <em>We&apos;ll see you soon.</em>
                   </h2>
                   <p className="mt-6 max-w-md leading-relaxed">
-                    A confirmation has been sent to <strong>{summary.Email}</strong>, with a calendar invite. You&apos;ll
-                    receive reminders 24 hours and 1 hour before. Chidinma will review your notes before you meet.
+                    A confirmation is on its way to <strong>{summary.Email}</strong>. We&apos;ll be in touch before
+                    the day to confirm details, and Chidinma will review your notes before you meet.
                   </p>
                 </div>
                 <dl className="on-dark rounded-3xl bg-ink p-6 text-paper md:col-span-5">

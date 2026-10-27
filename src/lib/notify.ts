@@ -1,18 +1,40 @@
+import nodemailer from "nodemailer";
 import { site } from "@/data/site";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
-/**
- * Sends email through Resend's HTTP API when RESEND_API_KEY is set.
- * Without a key it logs instead, so the site works in development.
- */
-export async function sendEmail(opts: {
+type Email = {
   to: string;
   subject: string;
   html: string;
   replyTo?: string;
-  attachments?: { filename: string; content: string }[];
-}) {
+  attachments?: { filename: string; content: string }[]; // base64 content
+};
+
+/**
+ * Sends email through, in order of preference:
+ *  1. Gmail SMTP when GMAIL_USER + GMAIL_APP_PASSWORD are set (no domain needed)
+ *  2. Resend's HTTP API when RESEND_API_KEY is set (needs a verified domain to email clients)
+ * With neither, it logs instead, so the site works in development.
+ */
+export async function sendEmail(opts: Email) {
+  const { GMAIL_USER, GMAIL_APP_PASSWORD } = process.env;
+  if (GMAIL_USER && GMAIL_APP_PASSWORD) {
+    const transport = nodemailer.createTransport({
+      service: "gmail",
+      auth: { user: GMAIL_USER, pass: GMAIL_APP_PASSWORD.replace(/\s/g, "") },
+    });
+    await transport.sendMail({
+      from: `${site.name} <${GMAIL_USER}>`,
+      to: opts.to,
+      subject: opts.subject,
+      html: opts.html,
+      replyTo: opts.replyTo,
+      attachments: opts.attachments?.map((a) => ({ filename: a.filename, content: a.content, encoding: "base64" })),
+    });
+    return;
+  }
+
   const key = process.env.RESEND_API_KEY;
   if (!key) {
     console.info("[email:dev]", opts.to, opts.subject);

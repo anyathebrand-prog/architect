@@ -31,6 +31,6 @@ When `prefers-reduced-motion` is set, all of these are switched off.
 
 ## Bookings & email
 
-`/api/booking` checks the submission, then emails both the studio and the client through [Resend](https://resend.com). If Cal.com is configured, it also creates the booking there, and Cal.com's workflows send the calendar invites and reminders. Copy `.env.example` to `.env.local` and fill in the keys. Without keys, emails are logged to the console.
+`/api/booking` checks the submission, then emails the booking to the studio (with any uploads attached) and a confirmation to the client. Email goes through a Gmail account when `GMAIL_USER` and `GMAIL_APP_PASSWORD` are set (no domain needed), or through [Resend](https://resend.com) when `RESEND_API_KEY` is set. If Cal.com is configured, the booking is also created there. Copy `.env.example` to `.env.local` and fill in the keys. Without keys, emails are logged to the console.
 
 The privacy notice at `/privacy` is a template written with the NDP Act 2023 in mind. Have it reviewed before launch.

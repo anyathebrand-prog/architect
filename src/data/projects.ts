@@ -44,7 +44,7 @@ export const projects: Project[] = [
     status: "Completed",
     client: "Private (family celebration)",
     collaborators: ["Lumen Lighting Co.", "Weave Collective"],
-    cover: img("photo-1530103862676-de8c9debad1d"),
+    cover: "/projects/harvest-supper/cover.jpg",
     summary: "A supper for two hundred under a canopy of woven palm, laid across a working farm.",
     story: [
       "Act one is the walk: guests arrive through rows of cassava, lit by low lanterns at knee height, so the table is discovered rather than revealed.",

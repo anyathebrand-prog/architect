@@ -41,20 +41,28 @@ export async function POST(req: Request) {
   }
 
   try {
-    await Promise.all([
-      sendEmail({
-        to: process.env.STUDIO_INBOX || site.email,
-        subject: `New consultation: ${fields.Name} — ${fields.Consultation}, ${fields.Date} ${get("time")}`,
-        html: layout("New consultation booking", table(fields)),
-        replyTo: fields.Email,
-        attachments,
-      }),
+    // The studio notification is the one that must succeed
+    await sendEmail({
+      to: process.env.STUDIO_INBOX || site.email,
+      subject: `New consultation: ${fields.Name} — ${fields.Consultation}, ${fields.Date} ${get("time")}`,
+      html: layout("New consultation booking", table(fields)),
+      replyTo: fields.Email,
+      attachments,
+    });
+  } catch (e) {
+    console.error(e);
+    return NextResponse.json({ error: "Could not send" }, { status: 502 });
+  }
+
+  // Client confirmation and calendar sync are best-effort: e.g. Resend without a
+  // verified domain can only email the account owner, so this may fail.
+  const extras = await Promise.allSettled([
       sendEmail({
         to: fields.Email,
         subject: `Your ${get("consultation")} with ${site.name} is confirmed`,
         html: layout(
           `See you on ${fields.Date}.`,
-          `<p>Dear ${fields.Name.split(" ")[0].replace(/[<>&]/g, "")},</p><p>Thank you for booking a consultation. Chidinma will review your notes beforehand. You'll receive reminders 24 hours and 1 hour before we meet.</p>${table({ Consultation: fields.Consultation, Date: fields.Date, Time: fields.Time, Fee: fields.Fee })}<p>Need to reschedule? Reply to this email or call ${site.phoneDisplay}.</p>`,
+          `<p>Dear ${fields.Name.split(" ")[0].replace(/[<>&]/g, "")},</p><p>Thank you for booking a consultation. Chidinma will review your notes beforehand. We'll be in touch before the day to confirm the details.</p>${table({ Consultation: fields.Consultation, Date: fields.Date, Time: fields.Time, Fee: fields.Fee })}<p>Need to reschedule? Reply to this email or call ${site.phoneDisplay}.</p>`,
         ),
       }),
       createCalBooking({
@@ -65,11 +73,8 @@ export async function POST(req: Request) {
         phone: fields.Phone,
         notes: `${fields["Project type"]} in ${fields.Location}. Budget ${fields.Budget}. ${fields.Description}`,
       }),
-    ]);
-  } catch (e) {
-    console.error(e);
-    return NextResponse.json({ error: "Could not send" }, { status: 502 });
-  }
+  ]);
+  extras.forEach((r) => r.status === "rejected" && console.warn("[booking] optional step failed:", r.reason));
 
   return NextResponse.json({ ok: true });
 }
