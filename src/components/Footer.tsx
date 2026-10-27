@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/data/site";
 
@@ -37,9 +38,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p aria-hidden className="display mt-16 select-none text-center text-[23vw] leading-[0.78] tracking-[-0.06em] text-paper/10 md:text-[19vw] xl:text-[18rem]">
-        Onwa<em>Studio</em>
-      </p>
+      <Image src="/brand/onwa-logo-light.png" alt="" aria-hidden width={1287} height={483} className="mx-auto mb-10 mt-20 w-full max-w-5xl select-none opacity-90" />
       <div className="rule-t meta flex flex-wrap justify-between gap-2 py-5 text-paper/50">
         <span>© {new Date().getFullYear()} {site.name}</span>
         <span>Founded &amp; led by {site.founder.name}</span>

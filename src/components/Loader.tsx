@@ -38,7 +38,7 @@ export default function Loader() {
     <div
       ref={ref}
       aria-hidden
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-paper text-ink"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-paper text-wine"
       style={{ clipPath: "inset(0% 0% 0% 0%)" }}
     >
       <div className="ld-line absolute left-0 right-0 top-1/2 h-px origin-left bg-clay" />
@@ -49,7 +49,8 @@ export default function Loader() {
           <line x1="50" y1="5" x2="50" y2="95" />
           <line x1="5" y1="50" x2="95" y2="50" />
         </svg>
-        <span className="ld-word meta translate-y-3 opacity-0">ONWA Studio — Architecture for gatherings</span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/onwa-logo.png" alt="" className="ld-word h-14 w-auto translate-y-3 opacity-0" />
       </div>
     </div>
   );

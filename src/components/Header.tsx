@@ -23,9 +23,7 @@ export default function Header() {
     <header className="sticky top-2 z-50 md:top-4">
       <div className="flex gap-1.5 rounded-[1.25rem] bg-canvas/80 p-1.5 backdrop-blur-md">
         <Link href="/" className={`${seg} flex-1 justify-between px-4 hover:bg-white`} aria-label={`${site.name} home`}>
-          <span className="text-lg font-semibold tracking-tight">
-            Onwa<em className="font-normal">Studio</em>
-          </span>
+          <Image src="/brand/onwa-logo.png" alt={site.name} width={1287} height={483} priority className="h-8 w-auto" />
           <span className="meta hidden text-right text-[0.55rem] leading-tight text-muted sm:block">
             Architecture &amp;
             <br />
