@@ -20,7 +20,7 @@ const scatter = [
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured).concat(projects.filter((p) => !p.featured));
-  const cardImages = ["the-clay-pavilion", "ikoyi-courtyard-house", "earth-residence-interiors", "atelier-renovation", "harmattan-hotel"].map((s) => getProject(s)!.cover);
+  const cardImages = ["harvest-supper", "ikoyi-courtyard-house", "the-clay-pavilion", "atelier-renovation", "harmattan-hotel"].map((s) => getProject(s)!.cover);
   const shown = services.slice(0, 5);
   const [big, ...tall] = [getProject("linen-gala")!, getProject("harvest-supper")!, getProject("harmattan-hotel")!];
 
