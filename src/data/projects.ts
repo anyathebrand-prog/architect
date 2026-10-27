@@ -114,7 +114,7 @@ export const projects: Project[] = [
     gallery: [
       "/projects/nature-living-room/view-2.jpg",
       img("photo-1505373877841-8d25f7d46678"),
-      img("photo-1511818966892-d7d671e672a2"),
+      "/projects/nature-living-room/view-3.jpg",
     ],
     materials: [
       { name: "Rammed laterite", note: "Excavated on site", swatch: "#B5654A" },
