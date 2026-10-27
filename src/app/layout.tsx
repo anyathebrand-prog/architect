@@ -16,10 +16,17 @@ const sans = Inter_Tight({
   variable: "--font-inter-tight",
   display: "swap",
 });
-// The ONWA logo typeface (regular only; <em> accents use a synthesised slant)
+// Cormorant Garamond for headlines, with true italics for <em> accents
 const serif = localFont({
-  src: "./fonts/tan-pearl.otf",
-  variable: "--font-tan-pearl",
+  src: [
+    { path: "./fonts/CormorantGaramond-Regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/CormorantGaramond-Medium.ttf", weight: "500", style: "normal" },
+    { path: "./fonts/CormorantGaramond-Bold.ttf", weight: "700", style: "normal" },
+    { path: "./fonts/CormorantGaramond-Italic.ttf", weight: "400", style: "italic" },
+    { path: "./fonts/CormorantGaramond-MediumItalic.ttf", weight: "500", style: "italic" },
+    { path: "./fonts/CormorantGaramond-BoldItalic.ttf", weight: "700", style: "italic" },
+  ],
+  variable: "--font-cormorant",
   display: "swap",
 });
 

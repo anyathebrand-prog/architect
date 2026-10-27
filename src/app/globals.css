@@ -13,7 +13,7 @@
   --color-muted: #8a8077;
   --color-rule: rgb(20 18 16 / 0.1);
   --font-sans: var(--font-inter-tight), system-ui, sans-serif;
-  --font-display: var(--font-tan-pearl), "Didot", "Bodoni 72", serif;
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
   --ease-stone: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -36,7 +36,7 @@ body {
 /* Headlines in the logo's high-contrast serif, italic accents */
 .display, .font-display {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 /* Headlines take the logo's wine colour; on dark surfaces they follow the text colour */
