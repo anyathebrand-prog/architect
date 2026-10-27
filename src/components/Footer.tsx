@@ -4,7 +4,7 @@ import { nav, site } from "@/data/site";
 
 export default function Footer() {
   return (
-    <footer className="on-dark mt-2 overflow-hidden rounded-[2rem] bg-ink px-4 pt-14 text-paper md:mt-3 md:rounded-[2.5rem] md:px-10 md:pt-20">
+    <footer className="on-dark mt-2 overflow-hidden rounded-[2rem] bg-wine px-4 pt-14 text-paper md:mt-3 md:rounded-[2.5rem] md:px-10 md:pt-20">
       <div className="grid gap-12 md:grid-cols-12">
         <div className="md:col-span-6">
           <p className="display text-5xl md:text-7xl">

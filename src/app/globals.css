@@ -44,7 +44,7 @@ body {
 @layer components {
   .display { color: var(--heading, var(--color-wine)); }
 }
-.text-paper, .bg-ink, .bg-earth { --heading: currentColor; }
+.text-paper, .bg-ink, .bg-earth, .bg-wine { --heading: currentColor; }
 .display em { font-style: italic; }
 
 /* Small uppercase UI labels */

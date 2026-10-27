@@ -50,7 +50,7 @@ export default function Header() {
             <span className="h-2 w-2 translate-y-0.5 rounded-full bg-ink" />
           </span>
         </button>
-        <Link href="/book" className={`${seg} meta hidden bg-ink px-6 text-paper hover:bg-clay sm:flex`}>
+        <Link href="/book" className={`meta hidden h-12 items-center rounded-2xl bg-ink px-6 transition-colors text-paper hover:bg-clay sm:flex`}>
           Book a consultation
         </Link>
       </div>
