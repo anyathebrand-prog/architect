@@ -75,7 +75,7 @@ export default function Home() {
       <Panel className="grid gap-10 md:grid-cols-12" aria-labelledby="founder">
         <div className="flex flex-col justify-between gap-10 md:col-span-7">
           <div>
-            <Kicker>Founded &amp; led by</Kicker>
+            <Kicker>Meet the Creative Director</Kicker>
             <h2 id="founder" data-split className="display mt-4 text-5xl md:text-7xl">
               Every project, <em>personally led</em> by {site.founder.name}.
             </h2>

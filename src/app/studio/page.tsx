@@ -38,7 +38,7 @@ export default function StudioPage() {
         </div>
         <div className="panel flex flex-col justify-between gap-10 p-6 md:col-span-7 md:p-12">
           <div>
-            <Kicker>Founded &amp; led by</Kicker>
+            <Kicker>Meet the Creative Director</Kicker>
             <h2 id="founder" data-split className="display mt-4 text-6xl md:text-8xl">
               Chidinma <em>Anya</em>
             </h2>
