@@ -112,7 +112,7 @@ export const projects: Project[] = [
       "Linen canopies filter the harmattan light by day and glow from within at night. The plan is a sequence of thresholds — compression, release, gathering — so that arrival itself becomes the first act of the evening.",
     ],
     gallery: [
-      img("photo-1464366400600-7168b8af9bc3"),
+      "/projects/nature-living-room/view-2.jpg",
       img("photo-1505373877841-8d25f7d46678"),
       img("photo-1511818966892-d7d671e672a2"),
     ],
