@@ -35,7 +35,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "harvest-supper",
-    title: "The Harvest Supper",
+    title: "Olive and Cream Banquet Hall",
     location: "Ibadan, Oyo",
     year: 2026,
     category: "Experiential",
