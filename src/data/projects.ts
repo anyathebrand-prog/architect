@@ -54,7 +54,7 @@ export const projects: Project[] = [
     gallery: [
       "/projects/harvest-supper/hall.jpg",
       img("photo-1519167758481-83f550bb49b3"),
-      img("photo-1505373877841-8d25f7d46678"),
+      "/projects/harvest-supper/botanical.jpg",
     ],
     materials: [
       { name: "Woven palm", note: "Hand-woven canopy", swatch: "#C4A574" },
