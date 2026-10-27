@@ -45,11 +45,11 @@ export const projects: Project[] = [
     client: "Private (family celebration)",
     collaborators: ["Lumen Lighting Co.", "Weave Collective"],
     cover: "/projects/harvest-supper/cover.jpg",
-    summary: "A supper for two hundred under a canopy of woven palm, laid across a working farm.",
+    summary: "A reception for three hundred beneath a canopy of olive and ivory, held inside a hall of glowing arches.",
     story: [
-      "Act one is the walk: guests arrive through rows of cassava, lit by low lanterns at knee height, so the table is discovered rather than revealed.",
-      "Act two is the table — a single line of reclaimed iroko following the contour of the land, under a palm canopy woven over six weeks by a cooperative from Oyo.",
-      "Act three is the strike. Every element was designed to be reused by the farm: the canopy became shade for the nursery, the table its packing bench.",
+      "The first act is the threshold. Guests enter under swags of ivory silk and pass a steady rhythm of backlit arches along both walls. The room opens slowly, one doorway at a time.",
+      "The second act is the aisle: a single olive runner that splits the hall into perfect symmetry. Tables sit on either side like trees in a grove, and the aisle leads to a tiered circular stage that rises in soft steps, like ripples.",
+      "The third act is the eclipse. Overlapping discs glow behind the couple: circles for eternity, two forms meeting as one. Nothing is lit from above. Everything glows from within, so the room holds golden hour all night.",
     ],
     gallery: [
       "/projects/harvest-supper/hall.jpg",
