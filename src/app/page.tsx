@@ -7,7 +7,7 @@ import { FeatureCard, ServiceCard } from "@/components/cards";
 import { Button, Kicker, Panel, RevealImage } from "@/components/ui";
 import { getProject, projects } from "@/data/projects";
 import { consultationTypes, posts, services } from "@/data/content";
-import { img, site } from "@/data/site";
+import { site } from "@/data/site";
 
 // Positions for the scattered service cards around the big "Services" word (desktop)
 const scatter = [
@@ -96,7 +96,7 @@ export default function Home() {
           </dl>
         </div>
         <div className="relative md:col-span-5">
-          <RevealImage src={img("photo-1531123897727-8f129e1688ce", 1200)} alt={`Portrait of ${site.founder.name}`} className="aspect-[4/5]" sizes="40vw" />
+          <RevealImage src={"/brand/founder.jpg"} alt={`Portrait of ${site.founder.name}`} className="aspect-[4/5]" sizes="40vw" />
           <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl bg-paper/90 p-3 backdrop-blur">
             <span>
               <span className="block font-medium">{site.founder.name}</span>

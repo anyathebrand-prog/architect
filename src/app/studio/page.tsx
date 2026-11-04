@@ -24,13 +24,13 @@ export default function StudioPage() {
         kicker="The studio"
         title={<>A small studio, <em>personally</em> led.</>}
         intro="ONWA — ‘moon’ in Igbo — is a Lagos studio for experiential design, architecture and interiors. We take on a deliberately small number of projects at a time, so each receives the full attention of the person who founded it."
-        bubbles={[img("photo-1503387762-592deb58ef4e", 200), img("photo-1531123897727-8f129e1688ce", 200), img("photo-1497366216548-37526070297c", 200)]}
+        bubbles={[img("photo-1503387762-592deb58ef4e", 200), "/brand/founder.jpg", img("photo-1497366216548-37526070297c", 200)]}
       />
 
       {/* Founder */}
       <section className="grid gap-2 md:grid-cols-12 md:gap-3" aria-labelledby="founder">
         <div className="relative md:col-span-5">
-          <RevealImage src={img("photo-1531123897727-8f129e1688ce", 1600)} alt={`${site.founder.name} in the ONWA studio`} className="aspect-[4/5] h-full md:rounded-[2.5rem]" sizes="42vw" />
+          <RevealImage src={"/brand/founder.jpg"} alt={`${site.founder.name} in the ONWA studio`} className="aspect-[4/5] h-full md:rounded-[2.5rem]" sizes="42vw" />
           <div className="absolute left-4 top-4 flex gap-1.5">
             <Chip>Founder</Chip>
             <Chip>Principal architect</Chip>

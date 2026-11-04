@@ -16,7 +16,7 @@ export default function BookPage() {
         kicker="Book a consultation"
         title={<>Let&apos;s build something <em>that lasts.</em></>}
         intro={`Every consultation is with ${site.founder.name} herself. Choose how you'd like to meet, pick a time, and tell us a little about the event or project.`}
-        bubbles={[img("photo-1531123897727-8f129e1688ce", 200), img("photo-1519167758481-83f550bb49b3", 200), img("photo-1600585154340-be6161a56a0c", 200)]}
+        bubbles={["/brand/founder.jpg", img("photo-1519167758481-83f550bb49b3", 200), img("photo-1600585154340-be6161a56a0c", 200)]}
       />
       <section className="panel overflow-hidden" aria-label="Booking">
         <Suspense fallback={<div className="min-h-96" />}>

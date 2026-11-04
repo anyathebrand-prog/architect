@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Chip, CtaBlock, Panel, RevealImage } from "@/components/ui";
 import { getPost, posts } from "@/data/content";
-import { img, site } from "@/data/site";
+import { site } from "@/data/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -49,7 +49,7 @@ export default async function PostPage({ params }: Props) {
       <Panel className="grid gap-10 md:grid-cols-12">
         <div className="flex items-center gap-3 self-start md:col-span-3">
           <span className="relative h-12 w-12 overflow-hidden rounded-full">
-            <Image src={img("photo-1531123897727-8f129e1688ce", 200)} alt="" fill sizes="48px" className="object-cover" />
+            <Image src={"/brand/founder.jpg"} alt="" fill sizes="48px" className="object-cover" />
           </span>
           <span>
             <span className="block font-medium">{site.founder.name}</span>
