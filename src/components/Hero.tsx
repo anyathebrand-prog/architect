@@ -51,11 +51,18 @@ export default function Hero() {
         </span>
       </h1>
       <div className="mt-12 grid gap-8 md:grid-cols-12">
-        <p className="hero-fade text-lg leading-snug text-muted md:col-span-5 md:col-start-6">
-          <span className="text-ink">About us.</span> An architecture and design studio specialising in event and experiential
-          design — pavilions, galas, launches, and the buildings that host them. Founded and led by Principal Architect{" "}
-          <span className="text-ink">{site.founder.name}</span>.
-        </p>
+        <div className="hero-fade space-y-3 text-lg leading-snug text-muted md:col-span-5 md:col-start-6">
+          <p>
+            <span className="text-ink">About us.</span> We are an event and experience design studio, creating spaces that
+            bring ideas to life. From weddings and concepts to exhibitions and brand activations, we design experiences that
+            go beyond aesthetics.
+          </p>
+          <p>
+            Through 3D visualisation, animation, spatial planning and technical drawings, we take ideas from concept to
+            construction.
+          </p>
+          <p>We collaborate with event planners, decorators, brands and creative teams to shape how people experience spaces.</p>
+        </div>
         <div className="hero-fade md:col-span-5 md:col-start-6">
           <Button href="/book">Book a consultation</Button>
         </div>
