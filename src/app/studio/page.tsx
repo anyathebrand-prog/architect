@@ -24,7 +24,7 @@ export default function StudioPage() {
         kicker="The studio"
         title={<>Designed with <em>care</em>, delivered with pace.</>}
         intro="ONWA — ‘moon’ in Igbo — is a Lagos studio for experiential design, architecture and interiors. We pay attention to details and ensure swift completion of every project."
-        bubbles={[img("photo-1503387762-592deb58ef4e", 200), "/brand/founder.jpg", img("photo-1497366216548-37526070297c", 200)]}
+        bubbles={["/projects/nebular-hall/cover.jpg", "/brand/founder.jpg", "/projects/the-purple-room/cover.jpg"]}
       />
 
       {/* Founder */}
@@ -96,10 +96,10 @@ export default function StudioPage() {
 
       {/* Studio space */}
       <section className="grid gap-2 md:grid-cols-12 md:gap-3" aria-label="At work">
-        <RevealImage src={img("photo-1503387762-592deb58ef4e")} alt="Hand drawings and plans on the studio table" className="aspect-[4/3] md:col-span-7 md:rounded-[2.5rem]" sizes="58vw" />
+        <RevealImage src="/projects/nebular-hall/cover.jpg" alt="Nebular Hall — concentric wedding layout under glowing pendants" className="aspect-[4/3] md:col-span-7 md:rounded-[2.5rem]" sizes="58vw" />
         <div className="grid gap-2 md:col-span-5 md:gap-3">
-          <RevealImage src={img("photo-1497366216548-37526070297c", 1000)} alt="Workspace with drawings and samples" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" from="center" />
-          <RevealImage src={img("photo-1541888946425-d81bb19240f5", 1000)} alt="Site visit during construction" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" />
+          <RevealImage src="/projects/harvest-supper/cover.jpg" alt="The Olive Reverie — olive and ivory reception hall" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" from="center" />
+          <RevealImage src="/projects/sera-pop-up/cover.jpg" alt="Sera Beauty pop-up booth in a Lagos mall" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" />
         </div>
       </section>
 
