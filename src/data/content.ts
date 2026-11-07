@@ -15,7 +15,7 @@ export const services: Service[] = [
     description:
       "Pavilions, galas, launches and installations. Temporary architecture built with the rigour of permanent work — and planned for what happens after.",
     deliverables: ["Spatial concept & guest journey", "Structures & scenography", "Build, install & strike"],
-    projects: ["harvest-supper", "atrium-launch", "harmattan-hotel", "linen-gala"],
+    projects: ["harvest-supper", "atrium-launch", "harmattan-hotel", "ikoyi-courtyard-house"],
   },
   {
     slug: "architecture",
@@ -23,7 +23,7 @@ export const services: Service[] = [
     description:
       "New buildings, from private homes to hotels and event venues, designed from the site outward — climate, light and material first.",
     deliverables: ["Feasibility & site analysis", "Concept to tender drawings", "Planning approvals"],
-    projects: ["ikoyi-courtyard-house", "lagoon-quarter"],
+    projects: ["lagoon-quarter", "atelier-renovation"],
   },
   {
     slug: "interior-design",
@@ -55,7 +55,7 @@ export const services: Service[] = [
     description:
       "We stay on site through construction, managing contractors, cost and quality so the building matches the drawings.",
     deliverables: ["Contractor procurement", "Site inspections", "Cost & programme reporting"],
-    projects: ["ikoyi-courtyard-house"],
+    projects: ["lagoon-quarter"],
   },
   {
     slug: "masterplanning",
