@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       "atrium-launch": "nebular-hall",
       "harmattan-hotel": "210-brand-dinner",
       "ikoyi-courtyard-house": "sera-beauty-pop-up-booth",
+      "marina-workplace": "danfo-pop-up",
     };
     return Object.entries(renamed).map(([from, to]) => ({
       source: `/projects/${from}`,
