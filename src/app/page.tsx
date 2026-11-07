@@ -83,17 +83,6 @@ export default function Home() {
           <blockquote className="max-w-lg text-xl leading-snug text-ink/70">
             “I lead every project myself — from the first sketch on site to the day we hand over the keys. That&apos;s the promise of a small studio.”
           </blockquote>
-          <dl className="grid grid-cols-2 gap-2 md:grid-cols-4">
-            {site.stats.map((s) => (
-              <div key={s.label} className="flex flex-col-reverse justify-end rounded-2xl bg-panel p-4">
-                <dt className="meta mt-2 text-muted">{s.label}</dt>
-                <dd className="display text-4xl">
-                  <span data-count={s.value}>{s.value.toLocaleString("en-GB")}</span>
-                  {s.suffix}
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
         <div className="relative md:col-span-5">
           <RevealImage src={"/brand/founder.jpg"} alt={`Portrait of ${site.founder.name}`} className="aspect-[4/5]" sizes="40vw" />

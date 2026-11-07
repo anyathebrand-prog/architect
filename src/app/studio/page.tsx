@@ -5,7 +5,7 @@ import { img, site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Studio",
-  description: "ONWA STUDIO's philosophy, and its founder and principal architect Chidinma Anya, who personally leads every project.",
+  description: "ONWA STUDIO's philosophy, and its founder and team lead Chidinma Anya, who personally leads every project.",
 };
 
 const values = [
@@ -33,7 +33,7 @@ export default function StudioPage() {
           <RevealImage src={"/brand/founder.jpg"} alt={`${site.founder.name} in the ONWA studio`} className="aspect-[4/5] h-full md:rounded-[2.5rem]" sizes="42vw" />
           <div className="absolute left-4 top-4 flex gap-1.5">
             <Chip>Founder</Chip>
-            <Chip>Principal architect</Chip>
+            <Chip>Team lead</Chip>
           </div>
         </div>
         <div className="panel flex flex-col justify-between gap-10 p-6 md:col-span-7 md:p-12">

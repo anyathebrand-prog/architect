@@ -6,10 +6,10 @@ export const site = {
   url: "https://onwastudio.com",
   tagline: "Architecture for gatherings",
   description:
-    "ONWA STUDIO is a Lagos architecture and design studio specialising in event and experiential design — pavilions, galas, launches and the buildings that host them. Founded and led by Principal Architect Chidinma Anya.",
+    "ONWA STUDIO is a Lagos architecture and design studio specialising in event and experiential design — pavilions, galas, launches and the buildings that host them. Founded and led by Chidinma Anya.",
   founder: {
     name: "Chidinma Anya",
-    title: "Founder & Principal Architect",
+    title: "Founder & Team Lead",
   },
   email: "hello@onwastudio.com",
   phone: "07073463305",
@@ -26,12 +26,6 @@ export const site = {
     { label: "Instagram", href: "https://instagram.com/onwa.studio" },
     { label: "LinkedIn", href: "https://linkedin.com/" },
     { label: "Pinterest", href: "https://pinterest.com/" },
-  ],
-  stats: [
-    { value: 12, suffix: "", label: "Years of practice" },
-    { value: 140, suffix: "+", label: "Projects completed" },
-    { value: 86000, suffix: "", label: "Sqm designed" },
-    { value: 9, suffix: "", label: "Cities across 4 countries" },
   ],
 };
 

@@ -4,7 +4,7 @@ import { recognition } from "@/data/content";
 
 export const metadata: Metadata = {
   title: "Recognition",
-  description: "Awards, press features and publications for ONWA STUDIO and principal architect Chidinma Anya.",
+  description: "Awards, press features and publications for ONWA STUDIO and team lead Chidinma Anya.",
 };
 
 export default function RecognitionPage() {

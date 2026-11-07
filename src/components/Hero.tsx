@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Bubble, Button } from "./ui";
-import { img, site } from "@/data/site";
+import { img } from "@/data/site";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section ref={ref} className="panel px-4 pb-16 pt-14 md:px-10 md:pb-24 md:pt-24">
       <p className="hero-fade meta mb-6 flex items-center gap-2 text-muted md:ml-[8%]">
-        <span className="h-2 w-2 rounded-full bg-clay" /> {site.stats[1].value}+ projects delivered · Lagos, since 2014
+        <span className="h-2 w-2 rounded-full bg-clay" /> Event & experience design · Lagos
       </p>
       <h1 className="display text-[11.5vw] md:text-[6.4vw] xl:text-[6.8rem]" aria-label="Designing gatherings and building places people remember, with ONWA.">
         <span className="line-mask md:text-right" aria-hidden>

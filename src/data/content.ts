@@ -38,7 +38,7 @@ export const services: Service[] = [
     slug: "consultation",
     title: "Consultation",
     description:
-      "A focused session with the principal architect to test a site, a budget or an idea before you commit.",
+      "A focused session with our team lead to test a site, a budget or an idea before you commit.",
     deliverables: ["Site or plan review", "Budget sense-check", "Written next steps"],
     projects: [],
   },

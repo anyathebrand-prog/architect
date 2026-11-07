@@ -20,21 +20,30 @@ export default function Cursor() {
     el.style.display = "block";
     const xTo = gsap.quickTo(el, "x", { duration: 0.35, ease: "power3.out" });
     const yTo = gsap.quickTo(el, "y", { duration: 0.35, ease: "power3.out" });
-    const move = (e: PointerEvent) => {
-      xTo(e.clientX);
-      yTo(e.clientY);
-      const target = e.target as Element;
-      const t = target.closest?.<HTMLElement>("[data-cursor]");
+    const pos = { x: -1, y: -1 };
+    const update = (target: Element | null) => {
+      const t = target?.closest?.<HTMLElement>("[data-cursor]");
       if (t) {
         setState("label");
         setLabel(t.dataset.cursor!);
       } else {
-        setState(target.closest?.("a,button,input,select,textarea,label") ? "link" : "");
+        setState(target?.closest?.("a,button,input,select,textarea,label") ? "link" : "");
       }
     };
+    const move = (e: PointerEvent) => {
+      pos.x = e.clientX;
+      pos.y = e.clientY;
+      xTo(e.clientX);
+      yTo(e.clientY);
+      update(e.target as Element);
+    };
+    // The page can scroll under a still mouse: re-check what's beneath it
+    const scroll = () => pos.x >= 0 && update(document.elementFromPoint(pos.x, pos.y));
     window.addEventListener("pointermove", move);
+    window.addEventListener("scroll", scroll, { passive: true });
     return () => {
       window.removeEventListener("pointermove", move);
+      window.removeEventListener("scroll", scroll);
       document.documentElement.classList.remove("has-cursor");
     };
   }, []);

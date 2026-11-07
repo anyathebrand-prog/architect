@@ -6,7 +6,7 @@ import { img, site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Book a Consultation",
-  description: "Book a virtual call, in-person meeting or site visit with ONWA STUDIO's principal architect, Chidinma Anya.",
+  description: "Book a virtual call, in-person meeting or site visit with ONWA STUDIO's team lead, Chidinma Anya.",
 };
 
 export default function BookPage() {
