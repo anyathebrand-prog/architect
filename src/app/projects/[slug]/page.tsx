@@ -111,6 +111,24 @@ export default async function ProjectPage({ params }: Props) {
         })}
       </section>
 
+      {/* Walkthrough video */}
+      {p.video && (
+        <section className="panel p-2 md:p-3" aria-label={`${p.title} walkthrough video`}>
+          <div className="flex items-center justify-between px-3 pb-3 pt-2 md:px-5">
+            <Kicker>Walkthrough</Kicker>
+            <Chip>Animation</Chip>
+          </div>
+          <video
+            src={p.video}
+            poster={p.cover}
+            controls
+            playsInline
+            preload="none"
+            className="aspect-video w-full rounded-3xl bg-ink object-cover md:rounded-[2rem]"
+          />
+        </section>
+      )}
+
       {/* Design process: moodboard, 3D model… */}
       {p.process && (
         <Panel aria-labelledby="process">

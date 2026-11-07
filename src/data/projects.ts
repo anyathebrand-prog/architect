@@ -29,6 +29,8 @@ export type Project = {
   materials: { name: string; note: string; swatch: string }[];
   /** Optional plan image shown in the Drawings panel instead of the generic line drawing */
   plan?: string;
+  /** Optional walkthrough video (H.264 MP4); poster defaults to the cover */
+  video?: string;
   /** Optional design-process images (moodboard, 3D model…) with short captions */
   process?: { src: string; caption: string }[];
   featured?: boolean;
@@ -101,6 +103,7 @@ export const projects: Project[] = [
       { name: "Sand carpet", note: "Floor finish", swatch: "#D8C3A0" },
     ],
     plan: "/projects/nebular-hall/plan.jpg",
+    video: "/projects/nebular-hall/walkthrough.mp4",
     process: [{ src: "/projects/nebular-hall/model.jpg", caption: "3D model — concentric layout" }],
   },
   {
