@@ -33,9 +33,7 @@ export default async function ProjectPage({ params }: Props) {
     ["Location", p.location],
     ["Area", `${p.area.toLocaleString("en-GB")} sqm`],
     ["Year", String(p.year)],
-    ["Status", p.status],
     ["Client", p.client],
-    ["Collaborators", p.collaborators.join(", ")],
   ];
 
   const jsonLd = {
@@ -59,7 +57,6 @@ export default async function ProjectPage({ params }: Props) {
         <div className="absolute left-4 top-4 flex flex-wrap gap-1.5 md:left-6 md:top-6">
           <Link href="/projects" className="pill meta bg-paper px-3 py-1.5 hover:bg-ink hover:text-paper">← All projects</Link>
           <Chip>{p.category}</Chip>
-          <Chip>{p.status}</Chip>
         </div>
         <h1 className="absolute bottom-4 left-4 flex flex-col items-start md:bottom-6 md:left-6">
           <span className="font-display rounded-t-2xl bg-paper px-4 pt-3 text-4xl italic leading-none tracking-tight md:text-7xl">{first}</span>
@@ -68,7 +65,7 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       {/* Stats */}
-      <dl className="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-3">
+      <dl className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
         {stats.map(([k, v]) => (
           <div key={k} className="rounded-3xl bg-paper p-5">
             <dt className="meta text-muted">{k}</dt>
