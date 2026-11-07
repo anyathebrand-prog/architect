@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
       "harmattan-hotel": "210-brand-dinner",
       "ikoyi-courtyard-house": "sera-beauty-pop-up-booth",
       "marina-workplace": "danfo-pop-up",
+      "linen-gala": "the-purple-room",
     };
     return Object.entries(renamed).map(([from, to]) => ({
       source: `/projects/${from}`,

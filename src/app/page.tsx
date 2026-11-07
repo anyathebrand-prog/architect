@@ -22,7 +22,7 @@ export default function Home() {
   const featured = projects.filter((p) => p.featured).concat(projects.filter((p) => !p.featured));
   const cardImages = ["the-olive-reverie", "lagoon-quarter", "nature-themed-living-room", "atelier-renovation", "210-brand-dinner"].map((s) => getProject(s)!.cover);
   const shown = services.slice(0, 5);
-  const [big, ...tall] = [getProject("linen-gala")!, getProject("the-olive-reverie")!, getProject("210-brand-dinner")!];
+  const [big, ...tall] = [getProject("the-purple-room")!, getProject("the-olive-reverie")!, getProject("210-brand-dinner")!];
 
   return (
     <>
