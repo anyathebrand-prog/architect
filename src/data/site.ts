@@ -23,7 +23,7 @@ export const site = {
     { days: "Sunday", time: "Closed" },
   ],
   socials: [
-    { label: "Instagram", href: "https://instagram.com/" },
+    { label: "Instagram", href: "https://instagram.com/onwa.studio" },
     { label: "LinkedIn", href: "https://linkedin.com/" },
     { label: "Pinterest", href: "https://pinterest.com/" },
   ],
