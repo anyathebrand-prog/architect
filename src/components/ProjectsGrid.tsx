@@ -18,7 +18,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
     <div>
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
         <div role="toolbar" aria-label="Filter projects by category" className="flex flex-wrap gap-1.5">
-          {(["All", ...categories] as const).map((c) => {
+          {(["All", ...categories.filter((c) => projects.some((p) => p.category === c))] as const).map((c) => {
             const count = c === "All" ? projects.length : projects.filter((p) => p.category === c).length;
             const active = filter === c;
             return (

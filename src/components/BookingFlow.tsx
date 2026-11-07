@@ -9,7 +9,7 @@ import { consultationTypes, type ConsultationId } from "@/data/content";
 const ease = [0.16, 1, 0.3, 1] as const;
 const steps = ["Type", "Date", "Time", "Details"] as const;
 
-const projectTypes = ["Residential", "Commercial", "Hospitality", "Interior", "Renovation", "Event / Experiential", "Other"];
+const projectTypes = ["Event / Experiential", "Hospitality", "Interior", "Residential", "Commercial", "Other"];
 const budgets = ["Under ₦25m", "₦25m – ₦75m", "₦75m – ₦200m", "₦200m – ₦500m", "Above ₦500m", "Not sure yet"];
 const timelines = ["As soon as possible", "Within 3 months", "3 – 6 months", "6 – 12 months", "Just exploring"];
 const slots = ["09:30", "10:30", "11:30", "13:00", "14:00", "15:00", "16:00", "17:00"];

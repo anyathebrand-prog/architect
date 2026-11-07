@@ -6,7 +6,6 @@ export const categories = [
   "Residential",
   "Commercial",
   "Interiors",
-  "Masterplanning",
 ] as const;
 
 export type Category = (typeof categories)[number];
@@ -251,87 +250,6 @@ export const projects: Project[] = [
       { name: "Opal glass", note: "Stacked wall lights", swatch: "#F2E2C6" },
     ],
     featured: true,
-  },
-  {
-    slug: "earth-residence-interiors",
-    title: "Earth Residence Interiors",
-    location: "Accra, Ghana",
-    year: 2022,
-    category: "Interiors",
-    type: "Residential interior",
-    area: 420,
-    status: "Completed",
-    client: "Private",
-    collaborators: ["Weave Collective"],
-    cover: img("photo-1618221195710-dd6b41faaea6"),
-    summary: "A complete interior in clay, stone and wool for a collector's apartment.",
-    story: [
-      "Every room is a study in a single material. Furniture was drawn by the studio and built by craftspeople in Kumasi.",
-    ],
-    gallery: [
-      img("photo-1600210492486-724fe5c67fb0"),
-      img("photo-1555041469-a586c61ea9bc"),
-      img("photo-1600566753190-17f0baa2a6c3"),
-    ],
-    materials: [
-      { name: "Clay plaster", note: "Hand-troweled", swatch: "#C08A6A" },
-      { name: "Travertine", note: "Vein-cut", swatch: "#D6C7B0" },
-      { name: "Wool bouclé", note: "Undyed", swatch: "#EDE6DA" },
-    ],
-  },
-  {
-    slug: "lagoon-quarter",
-    title: "Lagoon Quarter",
-    location: "Epe, Lagos",
-    year: 2026,
-    category: "Masterplanning",
-    type: "Mixed-use masterplan",
-    area: 48000,
-    status: "In design",
-    client: "Lagoon Quarter Development Ltd.",
-    collaborators: ["Ade Structures", "Studio Ọkàn Landscape", "UrbanFrame"],
-    cover: img("photo-1431576901776-e539bd916ba2"),
-    summary: "A walkable waterfront neighbourhood planned around shade, water and public life.",
-    story: [
-      "Streets are oriented to the prevailing breeze. Every home is within three minutes of shade, water and a public room.",
-    ],
-    gallery: [
-      img("photo-1487958449943-2429e8be8625"),
-      img("photo-1511818966892-d7d671e672a2"),
-      img("photo-1486406146926-c627a92ad1ab"),
-    ],
-    materials: [
-      { name: "Laterite", note: "Paving & walls", swatch: "#A3573D" },
-      { name: "Concrete", note: "Low-carbon mix", swatch: "#9C948A" },
-      { name: "Native planting", note: "Shade canopy", swatch: "#5D6B47" },
-    ],
-  },
-  {
-    slug: "atelier-renovation",
-    title: "Yaba Atelier",
-    location: "Yaba, Lagos",
-    year: 2022,
-    category: "Commercial",
-    type: "Renovation, design store",
-    area: 380,
-    status: "Completed",
-    client: "Atelier Ìrísí",
-    collaborators: ["Greenline MEP"],
-    cover: img("photo-1511818966892-d7d671e672a2"),
-    summary: "A 1960s warehouse stripped back into a store, gallery and runway.",
-    story: [
-      "We kept everything we could: the steel trusses, the scarred floor, the clerestory. New insertions are clay and timber, easily removed.",
-    ],
-    gallery: [
-      img("photo-1487958449943-2429e8be8625"),
-      img("photo-1524758631624-e2822e304c36"),
-      img("photo-1513694203232-719a280e022c"),
-    ],
-    materials: [
-      { name: "Existing steel", note: "Wire-brushed", swatch: "#4A4440" },
-      { name: "Terracotta tile", note: "Hand-made", swatch: "#B5654A" },
-      { name: "Plywood", note: "Display joinery", swatch: "#D2B48C" },
-    ],
   },
 ];
 

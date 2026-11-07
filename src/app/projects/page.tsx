@@ -6,7 +6,7 @@ import { img } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Experiential, hospitality, residential, commercial, interiors and masterplanning projects by ONWA STUDIO, Lagos.",
+  description: "Experiential, hospitality and interior projects by ONWA STUDIO, Lagos.",
 };
 
 export default function ProjectsPage() {

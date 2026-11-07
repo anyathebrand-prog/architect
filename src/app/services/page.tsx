@@ -8,15 +8,15 @@ import { img } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Event & experiential design, architecture, interiors, renovation, consultation, project management and masterplanning in Lagos and beyond.",
+  description: "Event & experiential design, architecture, interiors, consultation and project management in Lagos and beyond.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        kicker="Services — 7 disciplines"
-        title={<>Seven disciplines, <em>one</em> studio.</>}
+        kicker={`Services — ${services.length} disciplines`}
+        title={<>{["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][services.length] ?? services.length} disciplines, <em>one</em> studio.</>}
         intro="Event and experiential design leads everything we do. Choose a service below, or book a consultation and we'll advise on the right scope."
         bubbles={[img("photo-1464366400600-7168b8af9bc3", 200), img("photo-1600607687939-ce8a6c25118c", 200), img("photo-1487958449943-2429e8be8625", 200)]}
       />

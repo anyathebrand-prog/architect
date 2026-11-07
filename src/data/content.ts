@@ -23,7 +23,7 @@ export const services: Service[] = [
     description:
       "New buildings, from private homes to hotels and event venues, designed from the site outward — climate, light and material first.",
     deliverables: ["Feasibility & site analysis", "Concept to tender drawings", "Planning approvals"],
-    projects: ["lagoon-quarter", "atelier-renovation"],
+    projects: ["nebular-hall"],
   },
   {
     slug: "interior-design",
@@ -31,16 +31,9 @@ export const services: Service[] = [
     description:
       "Complete interiors: plan, joinery, lighting, furniture and finishes, drawn as one continuous idea.",
     deliverables: ["Layouts & joinery design", "Material & FF&E schedules", "Bespoke furniture"],
-    projects: ["nature-themed-living-room", "earth-residence-interiors"],
+    projects: ["nature-themed-living-room", "the-purple-room"],
   },
-  {
-    slug: "renovation",
-    title: "Renovation",
-    description:
-      "Giving existing buildings a second life. We keep what is good, remove what isn't, and add only what is needed.",
-    deliverables: ["Condition survey", "Strip-out & retention strategy", "Reconfiguration design"],
-    projects: ["atelier-renovation"],
-  },
+
   {
     slug: "consultation",
     title: "Consultation",
@@ -55,16 +48,9 @@ export const services: Service[] = [
     description:
       "We stay on site through construction, managing contractors, cost and quality so the building matches the drawings.",
     deliverables: ["Contractor procurement", "Site inspections", "Cost & programme reporting"],
-    projects: ["lagoon-quarter"],
+    projects: [],
   },
-  {
-    slug: "masterplanning",
-    title: "Masterplanning",
-    description:
-      "Neighbourhoods and estates planned around shade, water, movement and public life.",
-    deliverables: ["Urban analysis", "Masterplan & phasing", "Design codes"],
-    projects: ["lagoon-quarter"],
-  },
+
 ];
 
 export const process = [
@@ -111,48 +97,7 @@ export type Post = {
   body: string[];
 };
 
-export const posts: Post[] = [
-  {
-    slug: "building-for-the-harmattan",
-    title: "Building for the Harmattan",
-    category: "Design Thoughts",
-    date: "2026-09-12",
-    excerpt: "Why thick walls, deep shade and fewer machines make better buildings in West Africa.",
-    cover: img("photo-1431576901776-e539bd916ba2", 1200),
-    readTime: "6 min",
-    body: [
-      "Every December the dust arrives and the air turns dry and cool at night. Most buildings ignore it. We design for it.",
-      "Mass is the oldest climate technology we have. A thick earth or concrete wall absorbs the day's heat and releases it slowly overnight, flattening the temperature swing that makes a room uncomfortable.",
-      "Shade comes next. An overhang drawn correctly for the sun's path can do the work of a tonne of cooling equipment.",
-      "None of this is new. What is new is taking it seriously as architecture rather than an afterthought.",
-    ],
-  },
-  {
-    slug: "temporary-architecture-permanent-ideas",
-    title: "Temporary Architecture, Permanent Ideas",
-    category: "Article",
-    date: "2026-06-20",
-    excerpt: "Event design deserves the same rigour as a building. Here's how we approach it.",
-    cover: img("photo-1519167758481-83f550bb49b3", 1200),
-    readTime: "8 min",
-    body: [
-      "An event lasts a night. The memory lasts years. That asymmetry is why we treat every pavilion and gala as architecture.",
-      "We plan for the strike before we plan the build: where every material goes after the guests leave.",
-    ],
-  },
-  {
-    slug: "lagoon-quarter-update",
-    title: "Lagoon Quarter: Masterplan Approved",
-    category: "Project Update",
-    date: "2026-04-15",
-    excerpt: "Phase one of our waterfront neighbourhood in Epe receives planning approval.",
-    cover: img("photo-1487958449943-2429e8be8625", 1200),
-    readTime: "3 min",
-    body: [
-      "We're proud to share that the Lagoon Quarter masterplan has been approved. Phase one includes 120 homes, a market hall and a public waterfront.",
-    ],
-  },
-];
+export const posts: Post[] = [];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
 

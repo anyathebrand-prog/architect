@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowCircle, Chip, PageHero } from "@/components/ui";
 import { posts } from "@/data/content";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Journal",
@@ -13,6 +14,23 @@ const fmt = (d: string) => new Date(d).toLocaleDateString("en-GB", { day: "numer
 
 export default function JournalPage() {
   const [lead, ...rest] = posts;
+  if (!lead)
+    return (
+      <>
+        <PageHero kicker="Journal" title={<>Notes from the <em>drawing board</em></>} />
+        <section className="panel flex flex-col items-start gap-6 p-6 md:p-10">
+          <p className="display text-4xl md:text-5xl">
+            First entries <em>coming soon.</em>
+          </p>
+          <p className="max-w-md text-muted">
+            Project stories, behind-the-scenes and design notes will appear here. Follow along on Instagram in the meantime.
+          </p>
+          <a href={site.socials[0].href} target="_blank" rel="noopener noreferrer" className="pill meta bg-ink px-5 py-3 text-paper hover:bg-clay">
+            @onwa.studio on Instagram ↗
+          </a>
+        </section>
+      </>
+    );
   return (
     <>
       <PageHero kicker={`Journal — ${posts.length} entries`} title={<>Notes from the <em>drawing board</em></>} />

@@ -20,7 +20,7 @@ const scatter = [
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured).concat(projects.filter((p) => !p.featured));
-  const cardImages = ["the-olive-reverie", "lagoon-quarter", "nature-themed-living-room", "atelier-renovation", "210-brand-dinner"].map((s) => getProject(s)!.cover);
+  const cardImages = ["the-olive-reverie", "nebular-hall", "nature-themed-living-room", "danfo-pop-up", "the-purple-room"].map((s) => getProject(s)!.cover);
   const shown = services.slice(0, 5);
   const [big, ...tall] = [getProject("the-purple-room")!, getProject("the-olive-reverie")!, getProject("210-brand-dinner")!];
 
@@ -117,7 +117,8 @@ export default function Home() {
         </div>
       </Panel>
 
-      {/* Journal */}
+      {/* Journal (hidden until there are posts) */}
+      {posts.length > 0 && (
       <Panel aria-labelledby="journal">
         <div className="mb-10 flex items-end justify-between gap-6">
           <h2 id="journal" data-split className="display text-5xl md:text-7xl">From the <em>journal</em></h2>
@@ -140,6 +141,7 @@ export default function Home() {
           ))}
         </ul>
       </Panel>
+      )}
 
       {/* Book */}
       <Panel className="bg-panel" aria-labelledby="book-h">
