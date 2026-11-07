@@ -18,7 +18,7 @@ export type Project = {
   year: number;
   category: Category;
   type: string;
-  area: number;
+  area?: number; // sqm; omit to hide the Area box
   status: "Completed" | "On site" | "In design";
   client: string;
   collaborators: string[];
@@ -167,12 +167,11 @@ export const projects: Project[] = [
     slug: "harmattan-hotel",
     title: "210 Brand Dinner",
     location: "Abuja",
-    year: 2024,
+    year: 2026,
     category: "Experiential",
     type: "Brand dinner",
-    area: 5400,
     status: "On site",
-    client: "Savannah Hospitality Group",
+    client: "Private Client",
     collaborators: ["Ade Structures", "Studio Ọkàn Landscape"],
     cover: "/projects/210-brand-dinner/cover.jpg",
     summary: "The room is draped in heavy, dark vertical curtains, lit selectively from the bottom with rich, magenta-toned uplighting.",
