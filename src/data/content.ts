@@ -124,15 +124,15 @@ export const consultationTypes = [
     id: "studio",
     title: "In-Person Meeting",
     duration: "60 min",
-    fee: "₦50,000",
+    fee: "", // empty = no price shown
     description: "Meet Chidinma in person in Lagos, at your venue, office or another convenient spot. Bring drawings and photos; see samples and past work.",
   },
   {
     id: "site",
     title: "Site Visit",
     duration: "90 min",
-    fee: "₦150,000",
-    description: "We come to your site in Lagos to assess orientation, constraints and potential. Fee credited against appointment.",
+    fee: "",
+    description: "We come to your site in Lagos to assess orientation, constraints and potential.",
   },
 ] as const;
 

@@ -77,7 +77,7 @@ export default function BookingFlow() {
         Consultation: `${chosen!.title} · ${chosen!.duration}`,
         Date: fmtDate(date!),
         Time: `${time} (WAT)`,
-        Fee: chosen!.fee,
+        ...(chosen!.fee ? { Fee: chosen!.fee } : {}),
         Name: String(fd.get("name")),
         Email: email,
         Project: `${fd.get("projectType")} — ${fd.get("location")}`,
@@ -153,7 +153,7 @@ export default function BookingFlow() {
                       <span>
                         <span className="display block text-4xl md:text-5xl">{c.title}</span>
                         <span className="mt-4 block text-sm leading-relaxed opacity-80">{c.description}</span>
-                        <span className="meta mt-6 block border-t border-current/30 pt-3">{c.fee}</span>
+                        {c.fee && <span className="meta mt-6 block border-t border-current/30 pt-3">{c.fee}</span>}
                       </span>
                     </button>
                   ))}
@@ -203,7 +203,7 @@ export default function BookingFlow() {
                   <dl className="meta space-y-3 rounded-3xl bg-panel p-5">
                     <div><dt className="opacity-50">Consultation</dt><dd>{chosen?.title} · {chosen?.duration}</dd></div>
                     <div><dt className="opacity-50">When</dt><dd>{date && fmtDate(date)}, {time}</dd></div>
-                    <div><dt className="opacity-50">Fee</dt><dd>{chosen?.fee}</dd></div>
+                    {chosen?.fee && <div><dt className="opacity-50">Fee</dt><dd>{chosen.fee}</dd></div>}
                   </dl>
                   <Back onClick={() => go(2)} />
                 </div>
