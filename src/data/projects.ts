@@ -57,7 +57,6 @@ export const projects: Project[] = [
     ],
     gallery: [
       "/projects/harvest-supper/hall.jpg",
-      img("photo-1519167758481-83f550bb49b3"),
       "/projects/harvest-supper/botanical.jpg",
     ],
     materials: [

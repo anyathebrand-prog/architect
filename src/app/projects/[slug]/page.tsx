@@ -92,9 +92,24 @@ export default async function ProjectPage({ params }: Props) {
 
       {/* Gallery */}
       <section className="grid gap-2 md:grid-cols-12 md:gap-3" aria-label="Gallery">
-        <RevealImage src={p.gallery[0]} alt={`${p.title} — view 1`} className="aspect-[4/3] md:col-span-8 md:rounded-[2.5rem]" sizes="66vw" />
-        <RevealImage src={p.gallery[1]} alt={`${p.title} — view 2`} className="aspect-[4/5] md:col-span-4 md:aspect-auto md:rounded-[2.5rem]" sizes="33vw" from="center" />
-        <RevealImage src={p.gallery[2]} alt={`${p.title} — view 3`} className="aspect-[16/9] md:col-span-12 md:aspect-[21/9] md:rounded-[2.5rem]" sizes="100vw" parallax={5} />
+        {p.gallery.map((src, i) => {
+          // Three images: wide + tall, then a panorama. Any other count: full-width landscapes.
+          const three = p.gallery.length === 3;
+          const cls = three
+            ? ["aspect-[4/3] md:col-span-8", "aspect-[4/5] md:col-span-4 md:aspect-auto", "aspect-[16/9] md:col-span-12 md:aspect-[21/9]"][i]
+            : "aspect-[16/9] md:col-span-12";
+          return (
+            <RevealImage
+              key={src}
+              src={src}
+              alt={`${p.title} — view ${i + 1}`}
+              className={`${cls} md:rounded-[2.5rem]`}
+              sizes={three && i < 2 ? (i ? "33vw" : "66vw") : "100vw"}
+              from={three && i === 1 ? "center" : "bottom"}
+              parallax={i === p.gallery.length - 1 ? 5 : undefined}
+            />
+          );
+        })}
       </section>
 
       {/* Design process: moodboard, 3D model… */}
