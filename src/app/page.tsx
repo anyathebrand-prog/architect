@@ -20,9 +20,9 @@ const scatter = [
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured).concat(projects.filter((p) => !p.featured));
-  const cardImages = ["harvest-supper", "lagoon-quarter", "the-clay-pavilion", "atelier-renovation", "harmattan-hotel"].map((s) => getProject(s)!.cover);
+  const cardImages = ["the-olive-reverie", "lagoon-quarter", "nature-themed-living-room", "atelier-renovation", "210-brand-dinner"].map((s) => getProject(s)!.cover);
   const shown = services.slice(0, 5);
-  const [big, ...tall] = [getProject("linen-gala")!, getProject("harvest-supper")!, getProject("harmattan-hotel")!];
+  const [big, ...tall] = [getProject("linen-gala")!, getProject("the-olive-reverie")!, getProject("210-brand-dinner")!];
 
   return (
     <>

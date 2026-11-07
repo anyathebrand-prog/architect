@@ -40,7 +40,7 @@ export type Project = {
 // (Sanity, Contentful, Notion, a JSON file) without touching the templates.
 export const projects: Project[] = [
   {
-    slug: "harvest-supper",
+    slug: "the-olive-reverie",
     title: "The Olive Reverie",
     location: "Ibadan, Oyo",
     year: 2026,
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "atrium-launch",
+    slug: "nebular-hall",
     title: "Nebular Hall",
     location: "Victoria Island, Lagos",
     year: 2026,
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     process: [{ src: "/projects/nebular-hall/model.jpg", caption: "3D model — concentric layout" }],
   },
   {
-    slug: "the-clay-pavilion",
+    slug: "nature-themed-living-room",
     title: "Nature Themed Living Room",
     location: "Lekki, Lagos",
     year: 2025,
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "ikoyi-courtyard-house",
+    slug: "sera-beauty-pop-up-booth",
     title: "Sera Beauty Pop Up Booth",
     location: "Ikoyi, Lagos",
     year: 2024,
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "harmattan-hotel",
+    slug: "210-brand-dinner",
     title: "210 Brand Dinner",
     location: "Abuja",
     year: 2026,

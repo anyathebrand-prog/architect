@@ -15,7 +15,7 @@ export const services: Service[] = [
     description:
       "Pavilions, galas, launches and installations. Temporary architecture built with the rigour of permanent work — and planned for what happens after.",
     deliverables: ["Spatial concept & guest journey", "Structures & scenography", "Build, install & strike"],
-    projects: ["harvest-supper", "atrium-launch", "harmattan-hotel", "ikoyi-courtyard-house"],
+    projects: ["the-olive-reverie", "nebular-hall", "210-brand-dinner", "sera-beauty-pop-up-booth"],
   },
   {
     slug: "architecture",
@@ -31,7 +31,7 @@ export const services: Service[] = [
     description:
       "Complete interiors: plan, joinery, lighting, furniture and finishes, drawn as one continuous idea.",
     deliverables: ["Layouts & joinery design", "Material & FF&E schedules", "Bespoke furniture"],
-    projects: ["the-clay-pavilion", "earth-residence-interiors"],
+    projects: ["nature-themed-living-room", "earth-residence-interiors"],
   },
   {
     slug: "renovation",
