@@ -143,9 +143,4 @@ export const testimonials = [
     name: "Adaeze O.",
     role: "Private client, Lagos",
   },
-  {
-    quote: "The Clay Pavilion held three thousand people over five nights and then returned to the ground. It redefined what we thought an event structure could be.",
-    name: "Tunde B.",
-    role: "Director, Art Week Lagos",
-  },
 ];

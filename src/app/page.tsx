@@ -77,7 +77,7 @@ export default function Home() {
           <div>
             <Kicker>Meet the Creative Director</Kicker>
             <h2 id="founder" data-split className="display mt-4 text-5xl md:text-7xl">
-              Every project, <em>personally led</em> by {`${site.founder.name}.`}
+              Every project, <em>led</em> by {`${site.founder.name}.`}
             </h2>
           </div>
           <p className="max-w-lg text-xl leading-snug text-ink/70">

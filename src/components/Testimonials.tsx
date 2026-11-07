@@ -14,12 +14,14 @@ export default function Testimonials() {
 
   return (
     <div>
+      {n > 1 && (
       <div className="mb-12 flex justify-center gap-2">
         <button onClick={() => setI((v) => v - 1)} aria-label="Previous testimonial" className="flex h-12 w-12 items-center justify-center rounded-full ring-1 ring-ink/15 transition-colors hover:bg-ink hover:text-paper">‹</button>
         <button onClick={() => setI((v) => v + 1)} aria-label="Next testimonial" className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-paper transition-colors hover:bg-clay">›</button>
       </div>
+      )}
       <div className="relative grid items-stretch md:grid-cols-[1fr_minmax(0,36rem)_1fr]">
-        <Side t={at(i - 1)} align="right" />
+        {n > 1 ? <Side t={at(i - 1)} align="right" /> : <div aria-hidden />}
         <div className="relative z-10 min-h-80" aria-live="polite">
           <AnimatePresence mode="wait">
             <motion.figure
@@ -41,7 +43,7 @@ export default function Testimonials() {
             </motion.figure>
           </AnimatePresence>
         </div>
-        <Side t={at(i + 1)} align="left" />
+        {n > 1 ? <Side t={at(i + 1)} align="left" /> : <div aria-hidden />}
       </div>
     </div>
   );
