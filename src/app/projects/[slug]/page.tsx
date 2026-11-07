@@ -83,7 +83,6 @@ export default async function ProjectPage({ params }: Props) {
         <div className="space-y-5 text-lg leading-snug text-ink/75 md:col-span-4 md:col-start-9 md:pt-10">
           {p.story.map((s, i) => (
             <p key={i} data-fade>
-              {p.story.length > 1 && <span className="meta mr-2 text-clay">Act {["I", "II", "III", "IV"][i]}</span>}
               {s}
             </p>
           ))}

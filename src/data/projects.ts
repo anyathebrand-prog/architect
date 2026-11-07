@@ -39,7 +39,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "harvest-supper",
-    title: "Olive and Cream Banquet Hall",
+    title: "The Olive Reverie",
     location: "Ibadan, Oyo",
     year: 2026,
     category: "Experiential",
@@ -51,9 +51,8 @@ export const projects: Project[] = [
     cover: "/projects/harvest-supper/cover.jpg",
     summary: "A reception for three hundred beneath a canopy of olive and ivory, held inside a hall of glowing arches.",
     story: [
-      "The first act is the threshold. Guests enter under swags of ivory silk and pass a steady rhythm of backlit arches along both walls. The room opens slowly, one doorway at a time.",
-      "The second act is the aisle: a single olive runner that splits the hall into perfect symmetry. Tables sit on either side like trees in a grove, and the aisle leads to a tiered circular stage that rises in soft steps, like ripples.",
-      "The third act is the eclipse. Overlapping discs glow behind the couple: circles for eternity, two forms meeting as one. Nothing is lit from above. Everything glows from within, so the room holds golden hour all night.",
+      "The Olive Reverie is a contemporary wedding environment that brings together romantic elegance, rich textures and warm atmospheric lighting. Inspired by the natural sophistication of olive green and the softness of ivory, the design creates an intimate yet grand setting for an unforgettable celebration.",
+      "At the heart of the space is a sculptural stage framed by cascading ivory drapery and lush floral arrangements, creating a captivating focal point. Overhead, layered fabric installations intertwine with clusters of woven pendant lights, adding depth, warmth and visual drama to the ceiling. Tall arched openings, dressed in soft sheer curtains, introduce a sense of architectural rhythm, while olive-green wall treatments establish a rich and cohesive backdrop.",
     ],
     gallery: [
       "/projects/harvest-supper/hall.jpg",
