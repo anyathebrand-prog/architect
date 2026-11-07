@@ -43,12 +43,8 @@ export default function StudioPage() {
               Chidinma <em>Anya</em>
             </h2>
           </div>
-          <blockquote className="display text-3xl md:text-4xl">
-            “Architecture is a promise you make to people you&apos;ll never meet. <em>I want ours kept for a hundred years.</em>”
-          </blockquote>
           <div className="space-y-4 leading-snug text-ink/75">
             <p>Chidinma is a graduate of Architecture from Covenant University with First Class Honours, who is passionate about bold and experimental design.</p>
-            <p>She is known for a material language of earth, stone and linen, and for designing with the West African climate rather than against it.</p>
           </div>
           <dl className="rounded-2xl bg-panel p-4">
             <dt className="meta text-muted">Education</dt>
