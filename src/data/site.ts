@@ -3,10 +3,11 @@ export const site = {
   name: "ONWA STUDIO",
   shortName: "ONWA",
   monogram: "O",
-  url: "https://onwastudio.com",
+  // Used for share previews, sitemap and canonical links. Change when the custom domain is live.
+  url: process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "https://onwastudio.vercel.app",
   tagline: "Architecture for gatherings",
   description:
-    "ONWA STUDIO is a Lagos architecture and design studio specialising in event and experiential design — pavilions, galas, launches and the buildings that host them. Founded and led by Chidinma Anya.",
+    "ONWA STUDIO is an event and experience design studio in Lagos, creating spaces that bring ideas to life — from weddings and concepts to exhibitions and brand activations. Led by Chidinma Anya.",
   founder: {
     name: "Chidinma Anya",
     title: "Founder & Team Lead",
