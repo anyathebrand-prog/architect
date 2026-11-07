@@ -205,7 +205,7 @@ export const projects: Project[] = [
     slug: "danfo-pop-up",
     title: "Danfo Pop-Up",
     location: "Victoria Island, Lagos",
-    year: 2023,
+    year: 2026,
     category: "Hospitality",
     type: "Seating alcove & pop-up",
     status: "Completed",
