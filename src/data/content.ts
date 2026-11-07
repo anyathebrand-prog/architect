@@ -15,7 +15,7 @@ export const services: Service[] = [
     description:
       "Pavilions, galas, launches and installations. Temporary architecture built with the rigour of permanent work — and planned for what happens after.",
     deliverables: ["Spatial concept & guest journey", "Structures & scenography", "Build, install & strike"],
-    projects: ["the-clay-pavilion", "linen-gala", "harvest-supper", "atrium-launch"],
+    projects: ["harvest-supper", "atrium-launch", "harmattan-hotel", "linen-gala"],
   },
   {
     slug: "architecture",
@@ -23,7 +23,7 @@ export const services: Service[] = [
     description:
       "New buildings, from private homes to hotels and event venues, designed from the site outward — climate, light and material first.",
     deliverables: ["Feasibility & site analysis", "Concept to tender drawings", "Planning approvals"],
-    projects: ["ikoyi-courtyard-house", "harmattan-hotel"],
+    projects: ["ikoyi-courtyard-house", "lagoon-quarter"],
   },
   {
     slug: "interior-design",
@@ -31,7 +31,7 @@ export const services: Service[] = [
     description:
       "Complete interiors: plan, joinery, lighting, furniture and finishes, drawn as one continuous idea.",
     deliverables: ["Layouts & joinery design", "Material & FF&E schedules", "Bespoke furniture"],
-    projects: ["earth-residence-interiors", "marina-workplace"],
+    projects: ["the-clay-pavilion", "earth-residence-interiors"],
   },
   {
     slug: "renovation",
@@ -55,7 +55,7 @@ export const services: Service[] = [
     description:
       "We stay on site through construction, managing contractors, cost and quality so the building matches the drawings.",
     deliverables: ["Contractor procurement", "Site inspections", "Cost & programme reporting"],
-    projects: ["harmattan-hotel"],
+    projects: ["ikoyi-courtyard-house"],
   },
   {
     slug: "masterplanning",
@@ -128,19 +128,6 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "site-visit-harmattan-hotel",
-    title: "Site Visit: The Walls Go Up",
-    category: "Site Visit",
-    date: "2026-08-03",
-    excerpt: "Laterite blocks, lime mortar and the first rooms of the Harmattan Hotel take shape in Abuja.",
-    cover: img("photo-1541888946425-d81bb19240f5", 1200),
-    readTime: "4 min",
-    body: [
-      "Six months in, the ground floor walls of the Harmattan Hotel are complete. The laterite blocks are fired thirty kilometres from site.",
-      "We visit every week. Today was about the junction between wall and slab — the detail that decides whether the building looks crisp or tired in ten years.",
-    ],
-  },
-  {
     slug: "temporary-architecture-permanent-ideas",
     title: "Temporary Architecture, Permanent Ideas",
     category: "Article",
@@ -190,10 +177,10 @@ export const consultationTypes = [
   },
   {
     id: "studio",
-    title: "Studio Meeting",
+    title: "In-Person Meeting",
     duration: "60 min",
     fee: "₦50,000",
-    description: "Meet Chidinma at the Ikoyi studio. Bring drawings and photos; see models, samples and past work in person.",
+    description: "Meet Chidinma in person in Lagos, at your venue, office or another convenient spot. Bring drawings and photos; see samples and past work.",
   },
   {
     id: "site",

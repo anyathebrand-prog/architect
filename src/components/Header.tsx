@@ -87,7 +87,7 @@ export default function Header() {
               <div className="meta space-y-1 text-muted">
                 <a href={`mailto:${site.email}`} className="block text-ink">{site.email}</a>
                 <a href={`tel:${site.phone}`} className="block text-ink">{site.phoneDisplay}</a>
-                <p>{site.address.join(", ")}</p>
+                <p>{site.city}</p>
               </div>
               <Link href="/book" className="pill meta justify-center bg-ink py-3 text-paper">Book a consultation</Link>
             </div>

@@ -165,14 +165,14 @@ export function CtaBlock({
         <h2 data-split className="display text-5xl md:text-7xl">{title}</h2>
         <div className="flex flex-wrap items-center gap-6">
           <Button href="/book">Book a consultation</Button>
-          <p className="max-w-xs text-sm text-muted">Every project starts with a conversation with Chidinma — on a call, at the studio or on site.</p>
+          <p className="max-w-xs text-sm text-muted">Every project starts with a conversation with Chidinma — on a call, in person or on site.</p>
         </div>
       </div>
       <div className="relative min-h-72 overflow-hidden rounded-[2rem] md:col-span-5 md:rounded-[2.5rem]">
         <Image src={img("photo-1464366400600-7168b8af9bc3", 1200)} alt="" fill sizes="40vw" className="object-cover" />
         <div className="absolute bottom-4 left-4 flex flex-wrap gap-1.5">
           <Chip>Virtual · Free</Chip>
-          <Chip>Studio meeting</Chip>
+          <Chip>In-person meeting</Chip>
           <Chip>Site visit</Chip>
         </div>
       </div>

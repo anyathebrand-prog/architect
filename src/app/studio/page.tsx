@@ -100,10 +100,10 @@ export default function StudioPage() {
       </section>
 
       {/* Studio space */}
-      <section className="grid gap-2 md:grid-cols-12 md:gap-3" aria-label="The studio space">
+      <section className="grid gap-2 md:grid-cols-12 md:gap-3" aria-label="At work">
         <RevealImage src={img("photo-1503387762-592deb58ef4e")} alt="Hand drawings and plans on the studio table" className="aspect-[4/3] md:col-span-7 md:rounded-[2.5rem]" sizes="58vw" />
         <div className="grid gap-2 md:col-span-5 md:gap-3">
-          <RevealImage src={img("photo-1497366216548-37526070297c", 1000)} alt="The Ikoyi studio workspace" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" from="center" />
+          <RevealImage src={img("photo-1497366216548-37526070297c", 1000)} alt="Workspace with drawings and samples" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" from="center" />
           <RevealImage src={img("photo-1541888946425-d81bb19240f5", 1000)} alt="Site visit during construction" className="aspect-[16/10] md:rounded-[2.5rem]" sizes="42vw" />
         </div>
       </section>

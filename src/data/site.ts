@@ -16,7 +16,7 @@ export const site = {
   phoneDisplay: "+234 707 346 3305",
   whatsapp: "https://wa.link/fb3u2y",
   whatsappMessage: "Hi, I'd like to discuss a project with ONWA STUDIO",
-  address: ["14 Bourdillon Road", "Ikoyi, Lagos", "Nigeria"],
+  city: "Lagos, Nigeria", // no physical studio yet: only the city is shown
   hours: [
     { days: "Mon – Fri", time: "09:00 – 18:00" },
     { days: "Saturday", time: "By appointment" },

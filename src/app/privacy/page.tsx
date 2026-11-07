@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <h2>Your rights</h2>
         <p>You may request access to, correction or deletion of your data, withdraw consent at any time, object to processing, or request portability. You may also complain to the Nigeria Data Protection Commission (NDPC).</p>
         <h2>Contact</h2>
-        <p>Email <a className="underline" href={`mailto:${site.email}`}>{site.email}</a> or write to us at {site.address.join(", ")}.</p>
+        <p>Email <a className="underline" href={`mailto:${site.email}`}>{site.email}</a>.</p>
       </div>
     </article>
   );

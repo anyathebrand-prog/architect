@@ -48,7 +48,7 @@ const jsonLd = {
   telephone: site.phoneDisplay,
   email: site.email,
   founder: { "@type": "Person", name: site.founder.name, jobTitle: site.founder.title },
-  address: { "@type": "PostalAddress", streetAddress: site.address[0], addressLocality: "Lagos", addressCountry: "NG" },
+  areaServed: { "@type": "City", name: "Lagos" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -15,13 +15,7 @@ export default function Footer() {
             <span className="inline-flex h-11 w-11 items-center justify-center rounded-full ring-1 ring-paper/30 transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-8 text-sm md:col-span-6 md:grid-cols-3">
-          <div>
-            <p className="meta mb-3 text-paper/50">Studio</p>
-            <address className="not-italic leading-relaxed text-paper/80">
-              {site.address.map((l) => <span key={l} className="block">{l}</span>)}
-            </address>
-          </div>
+        <div className="grid grid-cols-2 gap-8 text-sm md:col-span-6">
           <div>
             <p className="meta mb-3 text-paper/50">Contact</p>
             <a href={`mailto:${site.email}`} className="block text-paper/80 hover:text-paper">{site.email}</a>

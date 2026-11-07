@@ -68,7 +68,7 @@ export function layout(title: string, body: string) {
   <p style="font-family:Georgia,serif;font-size:28px;margin:0 0 24px">ONWA <em>Studio</em></p>
   <h1 style="font-family:Georgia,serif;font-weight:400;font-size:32px;margin:0 0 16px">${title}</h1>
   ${body}
-  <p style="margin-top:32px;font-size:12px;color:#7a6a5c">${site.address.join(", ")} · ${site.phoneDisplay}</p></div>`;
+  <p style="margin-top:32px;font-size:12px;color:#7a6a5c">${site.name} · ${site.city} · ${site.phoneDisplay}</p></div>`;
 }
 
 /**
