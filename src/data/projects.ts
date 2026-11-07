@@ -162,6 +162,7 @@ export const projects: Project[] = [
       { name: "Trailing greenery", note: "Hanging canopy & planters", swatch: "#4E6B3A" },
     ],
     plan: "/projects/sera-pop-up/plan.jpg",
+    video: "/projects/sera-pop-up/walkthrough.mp4",
     process: [
       { src: "/projects/sera-pop-up/moodboard.jpg", caption: "Moodboard — crimson, black & cream" },
       { src: "/projects/sera-pop-up/model.jpg", caption: "3D model — booth layout" },
