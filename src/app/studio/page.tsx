@@ -22,8 +22,8 @@ export default function StudioPage() {
     <>
       <PageHero
         kicker="The studio"
-        title={<>A small studio, <em>personally</em> led.</>}
-        intro="ONWA — ‘moon’ in Igbo — is a Lagos studio for experiential design, architecture and interiors. We take on a deliberately small number of projects at a time, so each receives the full attention of the person who founded it."
+        title={<>Designed with <em>care</em>, delivered with pace.</>}
+        intro="ONWA — ‘moon’ in Igbo — is a Lagos studio for experiential design, architecture and interiors. We pay attention to details and ensure swift completion of every project."
         bubbles={[img("photo-1503387762-592deb58ef4e", 200), "/brand/founder.jpg", img("photo-1497366216548-37526070297c", 200)]}
       />
 
@@ -47,20 +47,15 @@ export default function StudioPage() {
             “Architecture is a promise you make to people you&apos;ll never meet. <em>I want ours kept for a hundred years.</em>”
           </blockquote>
           <div className="space-y-4 leading-snug text-ink/75">
-            <p>Chidinma founded ONWA STUDIO in 2014 after a decade working between Lagos, London and Accra. Her work moves between temporary, experiential architecture — pavilions, galas, launches — and the permanent buildings that host people, treating both with the same rigour.</p>
+            <p>Chidinma is a graduate of Architecture from Covenant University with First Class Honours, who is passionate about bold and experimental design.</p>
             <p>She is known for a material language of earth, stone and linen, and for designing with the West African climate rather than against it.</p>
           </div>
-          <dl className="grid gap-2 sm:grid-cols-3">
-            {[
-              ["Education", "M.Arch, Architectural Association · B.Sc, University of Lagos"],
-              ["Registration", "ARCON · MNIA"],
-              ["Recognition", "40 Under 40 Africa · AAA 2025 · WAF 2026 shortlist"],
-            ].map(([k, v]) => (
-              <div key={k} className="rounded-2xl bg-panel p-4">
-                <dt className="meta text-muted">{k}</dt>
-                <dd className="mt-2 text-sm leading-snug">{v}</dd>
-              </div>
-            ))}
+          <dl className="rounded-2xl bg-panel p-4">
+            <dt className="meta text-muted">Education</dt>
+            <dd className="mt-2 space-y-1 text-sm leading-snug">
+              <span className="block">B.Sc, Architecture — Covenant University</span>
+              <span className="block">M.Sc, Architecture — Bells University</span>
+            </dd>
           </dl>
         </div>
       </section>
@@ -82,10 +77,10 @@ export default function StudioPage() {
         <div className="panel flex flex-col justify-between gap-10 p-6 md:col-span-7 md:p-12">
           <Kicker>Working with the studio</Kicker>
           <p data-split className="display text-4xl md:text-6xl">
-            One architect, <em>from first sketch</em> to handover.
+            <em>From first sketch</em> to handover.
           </p>
           <p className="max-w-lg text-lg leading-snug text-ink/75">
-            Chidinma attends the first site visit, draws the concept, reviews every drawing and walks the site — or the venue — with you at handover. Around her, we bring in trusted collaborators as each project needs them.
+            We attend the first site visit, draw the concept, review every drawing and walk the site or the venue with you at handover. We also bring in trusted collaborators as each project needs them.
           </p>
           <Button href="/book">Book a consultation</Button>
         </div>
