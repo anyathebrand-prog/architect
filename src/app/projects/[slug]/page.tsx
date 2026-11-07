@@ -31,7 +31,6 @@ export default async function ProjectPage({ params }: Props) {
 
   const stats = [
     ["Location", p.location],
-    ...(p.area ? [["Area", `${p.area.toLocaleString("en-GB")} sqm`]] : []),
     ["Year", String(p.year)],
     ["Client", p.client],
   ];
@@ -65,7 +64,7 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       {/* Stats */}
-      <dl className={`grid grid-cols-2 gap-2 md:gap-3 ${stats.length === 3 ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
+      <dl className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
         {stats.map(([k, v]) => (
           <div key={k} className="rounded-3xl bg-paper p-5">
             <dt className="meta text-muted">{k}</dt>
