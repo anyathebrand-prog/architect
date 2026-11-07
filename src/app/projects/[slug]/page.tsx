@@ -97,14 +97,42 @@ export default async function ProjectPage({ params }: Props) {
         <RevealImage src={p.gallery[2]} alt={`${p.title} — view 3`} className="aspect-[16/9] md:col-span-12 md:aspect-[21/9] md:rounded-[2.5rem]" sizes="100vw" parallax={5} />
       </section>
 
+      {/* Design process: moodboard, 3D model… */}
+      {p.process && (
+        <Panel aria-labelledby="process">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <h2 id="process" data-split className="display text-4xl md:text-6xl">
+              From concept <em>to room</em>
+            </h2>
+            <Kicker>Design process</Kicker>
+          </div>
+          <div className="mt-10 grid gap-3 md:grid-cols-2">
+            {p.process.map((x) => (
+              <figure key={x.src}>
+                <div className="overflow-hidden rounded-3xl bg-panel">
+                  <Image src={x.src} alt={`${p.title} — ${x.caption}`} width={1600} height={1000} sizes="(min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
+                </div>
+                <figcaption className="meta mt-3 text-muted">{x.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </Panel>
+      )}
+
       {/* Drawings + materials */}
       <section className="grid gap-2 md:grid-cols-12 md:gap-3">
         <div className="panel p-6 md:col-span-8 md:p-10">
           <div className="flex items-center justify-between">
             <Kicker>Drawings</Kicker>
-            <Chip>Ground floor plan · 1:200</Chip>
+            <Chip>{p.plan ? "Plan view" : "Ground floor plan · 1:200"}</Chip>
           </div>
-          <FloorPlan className="mt-8 w-full text-earth" />
+          {p.plan ? (
+            <div className="mt-8 overflow-hidden rounded-3xl">
+              <Image src={p.plan} alt={`${p.title} — plan view`} width={1600} height={1170} sizes="(min-width: 768px) 66vw, 100vw" className="h-auto w-full" />
+            </div>
+          ) : (
+            <FloorPlan className="mt-8 w-full text-earth" />
+          )}
         </div>
         <div className="panel p-6 md:col-span-4 md:p-8">
           <Kicker>Materials</Kicker>

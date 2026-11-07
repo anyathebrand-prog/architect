@@ -27,6 +27,10 @@ export type Project = {
   story: string[];
   gallery: string[];
   materials: { name: string; note: string; swatch: string }[];
+  /** Optional plan image shown in the Drawings panel instead of the generic line drawing */
+  plan?: string;
+  /** Optional design-process images (moodboard, 3D model…) with short captions */
+  process?: { src: string; caption: string }[];
   featured?: boolean;
 };
 
@@ -64,6 +68,11 @@ export const projects: Project[] = [
       { name: "Olive felt", note: "Aisle runner & stage", swatch: "#8A8A4E" },
       { name: "Walnut", note: "Crossback chairs", swatch: "#7A5233" },
       { name: "Blush bouclé", note: "Lounge seating", swatch: "#C9A9A6" },
+    ],
+    plan: "/projects/harvest-supper/plan.jpg",
+    process: [
+      { src: "/projects/harvest-supper/moodboard.jpg", caption: "Moodboard — olive green & cream" },
+      { src: "/projects/harvest-supper/model.jpg", caption: "3D model — two-point perspective" },
     ],
     featured: true,
   },
