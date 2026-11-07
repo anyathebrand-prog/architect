@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { testimonials } from "@/data/content";
@@ -33,14 +32,9 @@ export default function Testimonials() {
             >
               <blockquote className="text-lg leading-snug md:text-xl">“{at(i).quote}”</blockquote>
               <figcaption className="flex items-center justify-between">
-                <span className="flex items-center gap-3">
-                  <span className="relative h-12 w-12 overflow-hidden rounded-full">
-                    <Image src={at(i).avatar} alt="" fill sizes="48px" className="object-cover" />
-                  </span>
-                  <span>
-                    <span className="block font-medium">{at(i).name}</span>
-                    <span className="block text-sm text-muted">{at(i).role}</span>
-                  </span>
+                <span>
+                  <span className="block font-medium">{at(i).name}</span>
+                  <span className="block text-sm text-muted">{at(i).role}</span>
                 </span>
                 <span aria-hidden className="text-5xl leading-none text-clay">”</span>
               </figcaption>

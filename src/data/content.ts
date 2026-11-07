@@ -1,4 +1,3 @@
-import { img } from "./site";
 
 export type Service = {
   slug: string;
@@ -143,24 +142,10 @@ export const testimonials = [
     quote: "ONWA turned our daughter's wedding into something guests still talk about. Chidinma was on site every day of the build — nothing was left to chance.",
     name: "Adaeze O.",
     role: "Private client, Lagos",
-    avatar: img("photo-1531123897727-8f129e1688ce", 200),
   },
   {
     quote: "The Clay Pavilion held three thousand people over five nights and then returned to the ground. It redefined what we thought an event structure could be.",
     name: "Tunde B.",
     role: "Director, Art Week Lagos",
-    avatar: img("photo-1506794778202-cad84cf45f1d", 200),
-  },
-  {
-    quote: "Our hotel stays cool without fighting the climate. The studio understood our guests, our budget and our timeline from the very first meeting.",
-    name: "Halima S.",
-    role: "Savannah Hospitality Group",
-    avatar: img("photo-1573496359142-b8d87734a5a2", 200),
-  },
-  {
-    quote: "A launch that changed while you stood in it. Our team has never had a response like it — and the build came in on budget.",
-    name: "Kofi A.",
-    role: "Brand Director",
-    avatar: img("photo-1500648767791-00dcc994a43e", 200),
   },
 ];

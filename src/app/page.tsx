@@ -77,12 +77,13 @@ export default function Home() {
           <div>
             <Kicker>Meet the Creative Director</Kicker>
             <h2 id="founder" data-split className="display mt-4 text-5xl md:text-7xl">
-              Every project, <em>personally led</em> by {site.founder.name}.
+              Every project, <em>personally led</em> by {`${site.founder.name}.`}
             </h2>
           </div>
-          <blockquote className="max-w-lg text-xl leading-snug text-ink/70">
-            “I lead every project myself — from the first sketch on site to the day we hand over the keys. That&apos;s the promise of a small studio.”
-          </blockquote>
+          <p className="max-w-lg text-xl leading-snug text-ink/70">
+            Chidinma is a graduate of Architecture from Covenant University with First Class Honours, who is passionate about
+            bold and experimental design.
+          </p>
         </div>
         <div className="relative md:col-span-5">
           <RevealImage src={"/brand/founder.jpg"} alt={`Portrait of ${site.founder.name}`} className="aspect-[4/5]" sizes="40vw" />
